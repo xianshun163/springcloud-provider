@@ -18,8 +18,8 @@ public class SpringCloudProvider {
     
 	@GetMapping("/hello")
 	public String hello(){
-		System.out.println("hello ");
-		return "hello,I am springcloud provider.";
+		System.out.println("hello "+foodb);
+		return "hello,I am springcloud provider."+foodb;
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(SpringCloudProvider.class, args);
